@@ -5,9 +5,9 @@ RUN mkdir /app
 WORKDIR /app
 
 # Add application files
-ADD ./insecure-js/package.json /app/
-ADD ./insecure-js/server.js /app/
-ADD ./insecure-js/init_db.js /app/
+ADD ./package.json /app/
+ADD ./server.js /app/
+ADD ./init_db.js /app/
 
 # Install dependencies using Yarn
 RUN npm install --legacy-peer-deps
